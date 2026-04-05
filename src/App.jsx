@@ -3,6 +3,8 @@ import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
 import { useDebounce } from "react-use";
+import {Routes, Route} from "react-router-dom";
+import MoviesDetails from "./pages/MoviesDetails";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
@@ -62,6 +64,8 @@ const App = () => {
   }, [debouncedSearchTerm]);
 
   return (
+    <Routes>
+      <Route path="/" element={
     <main>
       <div className="pattern" />
 
@@ -93,7 +97,14 @@ const App = () => {
         </section>
       </div>
     </main>
+    } />
+
+      <Route path="/movie/:id" element={<MoviesDetails/>}/>
+    </Routes>
   );
+
+
+
 };
 
 export default App;

@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const MovieCard = ({ movie: { title, vote_average, poster_path, release_date, original_language } }) => {
+const MovieCard = ({ movie: { title, vote_average,id, poster_path, release_date, original_language } }) => {
   return (
-    <div className="movie-card">
+    <Link to={`/movie/${id}`}>
+    <div className="movie-card cursor-pointer hover:scale-110 transition">
       <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}`: '/no-movie.png'} alt={title} />
 
       <div className="mt-4">
@@ -26,6 +28,7 @@ const MovieCard = ({ movie: { title, vote_average, poster_path, release_date, or
 
       </div>
     </div>
+    </Link>
   );
 };
 
