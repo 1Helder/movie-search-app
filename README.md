@@ -1,16 +1,89 @@
-# React + Vite
+# 🎬 Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web moderna para descobrir filmes, buscar títulos e visualizar detalhes completos de cada filme de forma rápida e intuitiva.
 
-Currently, two official plugins are available:
+## 🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://movie-search-app-red-six.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Sobre o Projeto
 
-## Expanding the ESLint configuration
+O **Movie Search App** permite que usuários explorem filmes populares e pesquisem por títulos específicos utilizando uma interface limpa e responsiva.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A aplicação consome dados da API do TMDB (*The Movie Database*), exibindo informações relevantes como pôster, avaliação, data de lançamento, sinopse e gêneros.
+
+---
+
+## ✨ Funcionalidades
+
+* 🔍 Busca de filmes em tempo real
+* 🎬 Listagem de filmes populares
+* 📄 Página de detalhes com:
+
+  * Sinopse
+  * Avaliação
+  * Data de lançamento
+  * Duração formatada
+  * Gêneros
+* 📱 Layout totalmente responsivo
+* ⏳ Loading e tratamento de erros
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* ⚛️ React
+* ⚡ Vite
+* 🎨 Tailwind CSS
+* 🌐 TMDB API
+* 🧠 Hooks (useState, useEffect)
+* 🔀 React Router
+
+---
+
+## 📦 Como Rodar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/1Helder/movie-search-app.git
+
+# Acesse a pasta
+cd movie-search-app
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
+```
+
+---
+
+## 🔑 Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_TMDB_API_KEY=sua_api_key_aqui
+```
+
+Você pode obter sua API Key gratuitamente em:
+https://www.themoviedb.org/
+
+---
+
+## 🎯 Aprendizados
+
+Este projeto foi desenvolvido com foco em:
+
+* Consumo de APIs externas
+* Gerenciamento de estado em React
+* Criação de interfaces responsivas com Tailwind CSS
+* Organização de componentes
+* Boas práticas com variáveis de ambiente
+
+---
+
+
