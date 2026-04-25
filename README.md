@@ -4,7 +4,14 @@ Uma aplicação web moderna para descobrir filmes, buscar títulos e visualizar 
 
 ## 🚀 Demonstração
 
-🔗 https://movie-search-app-red-six.vercel.app/
+🔗 Acesse: https://movie-search-app-red-six.vercel.app/
+
+
+![Demo](./src/assets/demo1.gif)
+
+### 📱Mobile
+
+![Demo](./src/assets/demo2.gif)
 
 ---
 
